@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
-  { name = "4Saves contributors" }
+  { name = "mofe404" }
 ]
 keywords = ["yt-dlp", "youtube", "tiktok", "instagram", "twitter", "x", "downloader", "macos", "premiere"]
 classifiers = [
@@ -32,6 +32,7 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/mofe404/4saves"
 Issues = "https://github.com/mofe404/4saves/issues"
+Creator = "https://x.com/mofe404"
 
 [project.scripts]
 4saves = "four_saves.app:main"

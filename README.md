@@ -4,6 +4,10 @@
 
 It is built for creators and editors: normal video downloads are converted to Premiere/QuickTime-friendly H.264/AAC MP4 by default.
 
+Made by **mofe404**.
+
+X: [@mofe404](https://x.com/mofe404)
+
 ## Features
 
 - Download videos, posts, reels, shorts, tweets, playlists, profiles, and collections.
@@ -46,28 +50,49 @@ winget install yt-dlp.yt-dlp
 winget install Gyan.FFmpeg
 ```
 
-## Download 4Saves
+## Install 4Saves From Terminal
 
-Go to the latest release:
+Install `pipx` first.
 
-```text
-https://github.com/mofe404/4saves/releases/latest
-```
-
-Download the source ZIP, unzip it, then open the folder in Terminal.
-
-Install with `pipx`:
+macOS:
 
 ```bash
-pipx install .
+brew install pipx
+pipx ensurepath
 ```
 
-If you do not have `pipx`, use a virtual environment:
+Linux, Debian/Ubuntu example:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install .
+sudo apt install pipx
+pipx ensurepath
+```
+
+Windows:
+
+```powershell
+py -m pip install --user pipx
+py -m pipx ensurepath
+```
+
+Then install 4Saves:
+
+```bash
+pipx install https://github.com/mofe404/4saves/archive/refs/heads/main.zip
+```
+
+Run it:
+
+```bash
+4saves
+```
+
+## Update 4Saves
+
+Update from terminal:
+
+```bash
+pipx install --force https://github.com/mofe404/4saves/archive/refs/heads/main.zip
 ```
 
 Then run:
@@ -76,33 +101,17 @@ Then run:
 4saves
 ```
 
-On macOS/Linux, you can also install the local command directly:
+## Download Option
 
-```bash
-./install.sh
-```
-
-## Update
-
-For normal downloaded installs, download the latest release ZIP again:
+If you prefer downloading manually, use the latest GitHub release:
 
 ```text
 https://github.com/mofe404/4saves/releases/latest
 ```
 
-Then reinstall from the new folder:
+## Future Package Install
 
-```bash
-pipx install --force .
-```
-
-If you installed from GitHub using git, you can also open the app and choose:
-
-```text
-Updates / dependency check
-```
-
-Long term, 4Saves should be published to PyPI so users can install and update with:
+Long term, 4Saves should be published to PyPI so install/update becomes:
 
 ```bash
 pipx install 4saves
@@ -138,7 +147,8 @@ Before sharing publicly:
 - Commit the project files.
 - Push to GitHub.
 - Add screenshots or a short demo GIF.
-- Create a release and upload/share the ZIP download link.
+- Share the terminal install command.
+- Create a release for people who prefer manual downloads.
 - Later, publish to PyPI for easier `pipx install 4saves` updates.
 
 ## Legal
