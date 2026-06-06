@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "4saves"
+version = "0.3.0"
+description = "A terminal media downloader for YouTube, TikTok, Instagram, and X."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "4Saves contributors" }
+]
+keywords = ["yt-dlp", "youtube", "tiktok", "instagram", "twitter", "x", "downloader", "macos", "premiere"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Video",
+  "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/mofe404/4saves"
+Issues = "https://github.com/mofe404/4saves/issues"
+
+[project.scripts]
+4saves = "four_saves.app:main"
+
+[tool.setuptools]
+packages = ["four_saves", "ytdl_mac"]

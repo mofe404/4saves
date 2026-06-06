@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+downloads/
+.4saves-settings.json
+.youtube-downloader-settings.json
