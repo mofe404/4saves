@@ -42,16 +42,28 @@ git commit -m "Describe the update"
 git push
 ```
 
-Users installed from a clone can update with:
+For normal users, publish a new GitHub Release. They can download the latest ZIP from:
+
+```text
+https://github.com/mofe404/4saves/releases/latest
+```
+
+If users installed from the downloaded folder with `pipx`, they can reinstall from the new downloaded folder:
+
+```bash
+pipx install --force .
+```
+
+Developer installs from git can update with:
 
 ```bash
 4saves update
-pipx install --force .
 ```
 
 ## 6. Release Ideas
 
 - Add a demo GIF to the README.
 - Create GitHub releases for stable versions.
+- Use the release ZIP link in social posts instead of telling users to clone.
 - Add issue templates for bug reports and feature requests.
-- Consider publishing to PyPI once the app feels stable.
+- Publish to PyPI once the app feels stable, so users can run `pipx install 4saves` and `pipx upgrade 4saves`.

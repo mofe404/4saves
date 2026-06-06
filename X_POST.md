@@ -8,6 +8,7 @@ Paste a link from YouTube, TikTok, Instagram, or X and save video/audio from the
 
 It also converts video to Premiere/QuickTime-friendly MP4 automatically.
 
+Download: https://github.com/mofe404/4saves/releases/latest
 GitHub: https://github.com/mofe404/4saves
 
 ## Personal Post
@@ -20,6 +21,9 @@ It is a terminal app for saving media from YouTube, TikTok, Instagram, and X. It
 
 Open source here:
 https://github.com/mofe404/4saves
+
+Download the latest release:
+https://github.com/mofe404/4saves/releases/latest
 
 ## Thread
 
@@ -35,3 +39,6 @@ https://github.com/mofe404/4saves
 
 6/ It is open source:
 https://github.com/mofe404/4saves
+
+Download:
+https://github.com/mofe404/4saves/releases/latest

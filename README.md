@@ -46,16 +46,17 @@ winget install yt-dlp.yt-dlp
 winget install Gyan.FFmpeg
 ```
 
-## Install 4Saves
+## Download 4Saves
 
-Clone the repo:
+Go to the latest release:
 
-```bash
-git clone https://github.com/mofe404/4saves.git
-cd 4saves
+```text
+https://github.com/mofe404/4saves/releases/latest
 ```
 
-Recommended install with `pipx`:
+Download the source ZIP, unzip it, then open the folder in Terminal.
+
+Install with `pipx`:
 
 ```bash
 pipx install .
@@ -75,7 +76,7 @@ Then run:
 4saves
 ```
 
-On macOS/Linux, you can also install a symlink:
+On macOS/Linux, you can also install the local command directly:
 
 ```bash
 ./install.sh
@@ -83,17 +84,29 @@ On macOS/Linux, you can also install a symlink:
 
 ## Update
 
-If installed from a git clone:
+For normal downloaded installs, download the latest release ZIP again:
+
+```text
+https://github.com/mofe404/4saves/releases/latest
+```
+
+Then reinstall from the new folder:
 
 ```bash
-4saves update
 pipx install --force .
 ```
 
-Or open the app and choose:
+If you installed from GitHub using git, you can also open the app and choose:
 
 ```text
 Updates / dependency check
+```
+
+Long term, 4Saves should be published to PyPI so users can install and update with:
+
+```bash
+pipx install 4saves
+pipx upgrade 4saves
 ```
 
 To update the downloader engine:
@@ -125,7 +138,8 @@ Before sharing publicly:
 - Commit the project files.
 - Push to GitHub.
 - Add screenshots or a short demo GIF.
-- Add releases when stable.
+- Create a release and upload/share the ZIP download link.
+- Later, publish to PyPI for easier `pipx install 4saves` updates.
 
 ## Legal
 

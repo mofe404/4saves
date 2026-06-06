@@ -807,7 +807,7 @@ def dependency_menu() -> None:
     choice = menu(
         "Maintenance",
         [
-            "Update 4Saves from git",
+            "Update 4Saves",
             "Show install commands",
             "Update yt-dlp with Homebrew",
             "Update yt-dlp with pip",
@@ -834,8 +834,9 @@ def update_app() -> None:
     project_dir = Path(__file__).resolve().parents[1]
     git_dir = project_dir / ".git"
     if not git_dir.exists():
-        status("WARN", "4Saves is not installed from a git clone yet.", "yellow")
-        status("TIP", "After publishing, clone the GitHub repo and run 4saves update from that copy.", "blue")
+        status("WARN", "Automatic app updates need a git or package-manager install.", "yellow")
+        status("TIP", "For downloaded ZIP installs, download the latest release from GitHub and reinstall.", "blue")
+        status("URL", "https://github.com/mofe404/4saves/releases/latest", "cyan")
         pause()
         return
 
