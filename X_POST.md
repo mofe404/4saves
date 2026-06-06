@@ -9,7 +9,12 @@ Paste a link from YouTube, TikTok, Instagram, or X and save video/audio from the
 It also converts video to Premiere/QuickTime-friendly MP4 automatically.
 
 Install:
-pipx install https://github.com/mofe404/4saves/archive/refs/heads/main.zip
+git clone https://github.com/mofe404/4saves.git
+cd 4saves
+./install.sh
+
+Update later with:
+4saves update
 
 GitHub: https://github.com/mofe404/4saves
 
@@ -22,7 +27,12 @@ So I built 4Saves.
 It is a terminal app for saving media from YouTube, TikTok, Instagram, and X. It supports video, audio, batches, playlists/profiles where available, cookies for login-gated links, and Premiere-friendly MP4 conversion.
 
 Install from terminal:
-pipx install https://github.com/mofe404/4saves/archive/refs/heads/main.zip
+git clone https://github.com/mofe404/4saves.git
+cd 4saves
+./install.sh
+
+Updates:
+4saves update
 
 Open source here:
 https://github.com/mofe404/4saves
@@ -40,7 +50,12 @@ https://github.com/mofe404/4saves
 5/ Videos are converted to H.264/AAC MP4 by default, so they are easier to import into Premiere and play in QuickTime.
 
 6/ Install from terminal:
-pipx install https://github.com/mofe404/4saves/archive/refs/heads/main.zip
+git clone https://github.com/mofe404/4saves.git
+cd 4saves
+./install.sh
 
-7/ It is open source:
+7/ Update anytime:
+4saves update
+
+8/ It is open source:
 https://github.com/mofe404/4saves

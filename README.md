@@ -52,33 +52,44 @@ winget install Gyan.FFmpeg
 
 ## Install 4Saves From Terminal
 
-Install `pipx` first.
+Install the required tools first, then install 4Saves from GitHub.
 
 macOS:
 
 ```bash
-brew install pipx
-pipx ensurepath
+brew install git python yt-dlp ffmpeg aria2
 ```
 
 Linux, Debian/Ubuntu example:
 
 ```bash
-sudo apt install pipx
-pipx ensurepath
+sudo apt update
+sudo apt install git python3 python3-pip ffmpeg aria2
+python3 -m pip install -U yt-dlp
 ```
 
 Windows:
 
 ```powershell
+winget install Git.Git
 py -m pip install --user pipx
 py -m pipx ensurepath
 ```
 
-Then install 4Saves:
+Install 4Saves on macOS/Linux:
 
 ```bash
-pipx install https://github.com/mofe404/4saves/archive/refs/heads/main.zip
+git clone https://github.com/mofe404/4saves.git
+cd 4saves
+./install.sh
+```
+
+Install 4Saves on Windows:
+
+```powershell
+git clone https://github.com/mofe404/4saves.git
+cd 4saves
+py -m pip install --user .
 ```
 
 Run it:
@@ -89,10 +100,10 @@ Run it:
 
 ## Update 4Saves
 
-Update from terminal:
+Update from terminal anytime:
 
 ```bash
-pipx install --force https://github.com/mofe404/4saves/archive/refs/heads/main.zip
+4saves update
 ```
 
 Then run:
@@ -103,7 +114,7 @@ Then run:
 
 ## Download Option
 
-If you prefer downloading manually, use the latest GitHub release:
+If you prefer downloading manually instead of installing through git, use the latest GitHub release:
 
 ```text
 https://github.com/mofe404/4saves/releases/latest
@@ -111,7 +122,7 @@ https://github.com/mofe404/4saves/releases/latest
 
 ## Future Package Install
 
-Long term, 4Saves should be published to PyPI so install/update becomes:
+Long term, 4Saves can be published to PyPI so install/update becomes:
 
 ```bash
 pipx install 4saves
@@ -147,7 +158,7 @@ Before sharing publicly:
 - Commit the project files.
 - Push to GitHub.
 - Add screenshots or a short demo GIF.
-- Share the terminal install command.
+- Share the git-based terminal install command.
 - Create a release for people who prefer manual downloads.
 - Later, publish to PyPI for easier `pipx install 4saves` updates.
 

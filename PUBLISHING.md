@@ -42,16 +42,18 @@ git commit -m "Describe the update"
 git push
 ```
 
-For normal users, share this terminal install command:
+For normal users, share these terminal install commands:
 
 ```bash
-pipx install https://github.com/mofe404/4saves/archive/refs/heads/main.zip
+git clone https://github.com/mofe404/4saves.git
+cd 4saves
+./install.sh
 ```
 
 For updates:
 
 ```bash
-pipx install --force https://github.com/mofe404/4saves/archive/refs/heads/main.zip
+4saves update
 ```
 
 Also create GitHub releases for users who prefer manual downloads:
@@ -64,6 +66,6 @@ https://github.com/mofe404/4saves/releases/latest
 
 - Add a demo GIF to the README.
 - Create GitHub releases for stable versions.
-- Use the terminal install command in social posts instead of telling users to clone.
+- Use the install commands in social posts and make it clear updates are automatic through `4saves update`.
 - Add issue templates for bug reports and feature requests.
 - Publish to PyPI once the app feels stable, so users can run `pipx install 4saves` and `pipx upgrade 4saves`.
