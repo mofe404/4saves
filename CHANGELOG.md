@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.5.0
+
+- Added modern YouTube challenge support through the official EJS remote-component fallback.
+- Added configurable concurrent fragments, exponential retry delays, socket timeouts, and file/extractor retries.
+- Added error-specific recovery advice and a persistent `last-error.log` for failed jobs.
+- Made settings and history writes atomic and tolerant of unknown or malformed records.
+- Added free-space warnings and a visible destination summary before downloads.
+- Added direct `4saves URL` and `4saves audio URL` commands.
+- Grouped secondary actions into submenus so the main interface fits an 80×24 terminal.
+- Expanded system health checks for `ffprobe`, Deno/Node, and YouTube EJS.
+
+## 0.4.0
+
+- Replaced numbered prompts with highlighted arrow-key menus.
+- Refreshed the terminal layout with compact headers and rounded panels.
+- Added a clean live download bar with speed and ETA.
+- Standardized video output for broad editor compatibility: MP4, 8-bit H.264, CFR, AAC-LC stereo/48 kHz, even dimensions, `avc1`, and fast-start metadata.
+- Skip redundant conversion when a download already meets the compatibility checks.
+- Added quick custom downloads with start/end clipping and per-job folders.
+- Added persistent download history and one-menu retry/resume support.
+- Detects partial files created before download history existed and distinguishes active downloads.
+- Made changing the default download folder a main-menu action.
+- Updated the interface to reflect broad `yt-dlp` site support.
+
 ## 0.3.0
 
 - Rebranded the app to 4Saves.

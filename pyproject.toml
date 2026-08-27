@@ -4,15 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "4saves"
-version = "0.3.0"
-description = "A terminal media downloader for YouTube, TikTok, Instagram, and X."
+version = "0.5.0"
+description = "A friendly terminal downloader for video and audio from sites supported by yt-dlp."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
   { name = "mofe404" }
 ]
-keywords = ["yt-dlp", "youtube", "tiktok", "instagram", "twitter", "x", "downloader", "macos", "premiere"]
+keywords = ["yt-dlp", "youtube", "tiktok", "instagram", "twitter", "x", "downloader", "macos", "premiere", "video", "audio"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Environment :: Console",
