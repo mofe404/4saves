@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+
+- Added the first native 4Saves desktop interface for macOS, Windows, and Linux.
+- Added link analysis with title, platform, creator, duration, and collection details.
+- Added simple Best, Universal, Edit-ready, Small, and Audio presets.
+- Added a persistent SQLite download queue with restart recovery.
+- Added live progress, retry, cancel, native folder selection, drag-and-drop, and reveal-in-folder actions.
+- Replaced the desktop app's shell-based conversion hook with a structured internal processing stage.
+- Kept the Qt desktop runtime optional so terminal-only installations remain lightweight.
+
 ## 0.5.0
 
 - Added modern YouTube challenge support through the official EJS remote-component fallback.

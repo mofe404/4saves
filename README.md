@@ -8,6 +8,30 @@ Made by **mofe404**.
 
 X: [@mofe404](https://x.com/mofe404)
 
+## Native Desktop Beta
+
+The next 4Saves interface is now available for development testing. It includes:
+
+- A native, mouse-friendly window with full keyboard focus support.
+- Link analysis before downloading.
+- Best, Universal MP4, Edit-ready MP4, Small MP4, and Audio presets.
+- A persistent download queue that survives app restarts.
+- Live progress, speed, ETA, retry, cancel, and Show File controls.
+- Drag-and-drop URLs and a native download-folder picker.
+
+Create a virtual environment and install the optional desktop package:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -e '.[desktop]'
+4saves-desktop
+```
+
+On Windows, activate the environment with `.venv\\Scripts\\activate` before running the final two commands.
+
+The terminal interface remains available through `4saves` and does not require the desktop dependency.
+
 ## Features
 
 - Download videos, posts, reels, shorts, tweets, playlists, profiles, and collections.
